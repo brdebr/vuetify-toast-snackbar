@@ -27,6 +27,7 @@
 </template>
 
 <script>
+import {VSnackbar, VIcon } from 'vuetify/lib'
   export default {
     props: {
       x: {
@@ -68,7 +69,10 @@
         default: false
       }
     },
-
+    components:{
+      VSnackbar,
+      VIcon 
+    },
     data: () => ({
       active: false
     }),
